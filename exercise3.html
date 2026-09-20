@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercici 3 - Administració de productes</title>
+  <!-- Carreguem Bootstrap des del CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Administració de productes</h1>
+
+    <!-- Botó per afegir un nou producte -->
+    <button class="btn btn-primary mb-3">Afegir producte</button>
+
+    <!-- table-responsive permet scroll horitzontal en pantalles petites -->
+    <div class="table-responsive">
+      <!-- table activa Bootstrap; table-striped alterna files; table-bordered afegeix vores -->
+      <table class="table table-striped table-bordered">
+        <!-- table-dark posa la capçalera amb fons fosc -->
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Categoria</th>
+            <th>Preu</th>
+            <th>Stock</th>
+            <th>Accions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td><td>Laptop</td><td>Ordinadors</td><td>899 €</td><td>10</td>
+            <td>
+              <!-- btn-sm fa els botons més petits -->
+              <button class="btn btn-warning btn-sm">Editar</button>
+              <button class="btn btn-danger btn-sm">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td><td>Keyboard</td><td>Accessoris</td><td>79 €</td><td>25</td>
+            <td>
+              <button class="btn btn-warning btn-sm">Editar</button>
+              <button class="btn btn-danger btn-sm">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td><td>Mouse</td><td>Accessoris</td><td>49 €</td><td>30</td>
+            <td>
+              <button class="btn btn-warning btn-sm">Editar</button>
+              <button class="btn btn-danger btn-sm">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="index.html" class="btn btn-secondary mt-4">Tornar</a>
+  </div>
+</body>
+</html>

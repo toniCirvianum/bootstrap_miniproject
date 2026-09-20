@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercici 2 - Formularis</title>
+  <!-- Carreguem Bootstrap des del CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- FORMULARI DE LOGIN -->
+    <h2 class="mb-4">Login</h2>
+
+    <!-- alert-success mostra un missatge d'èxit -->
+    <div class="alert alert-success">Login correcte.</div>
+
+    <form>
+      <!-- mb-3 afegeix espai sota el camp -->
+      <div class="mb-3">
+        <!-- form-label aplica l'estil de Bootstrap a l'etiqueta -->
+        <label for="loginEmail" class="form-label">Email</label>
+        <!-- form-control aplica l'estil Bootstrap al camp -->
+        <input type="email" id="loginEmail" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="loginPassword" class="form-label">Contrasenya</label>
+        <input type="password" id="loginPassword" class="form-control">
+      </div>
+
+      <!-- form-check s'utilitza per als checkbox -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="remember">
+        <label for="remember" class="form-check-label">Recorda'm</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+
+    <!-- FORMULARI DE REGISTRE -->
+    <h2 class="mt-5 mb-4">Registre</h2>
+
+    <!-- alert-danger mostra un missatge d'error -->
+    <div class="alert alert-danger">Error en el registre.</div>
+
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" id="name" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="registerEmail" class="form-label">Email</label>
+        <input type="email" id="registerEmail" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="registerPassword" class="form-label">Contrasenya</label>
+        <input type="password" id="registerPassword" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="country" class="form-label">País</label>
+        <!-- form-select aplica l'estil Bootstrap als desplegables -->
+        <select id="country" class="form-select">
+          <option>Espanya</option>
+          <option>França</option>
+          <option>Itàlia</option>
+        </select>
+      </div>
+
+      <div class="form-check mb-3">
+        <input type="checkbox" id="terms" class="form-check-input">
+        <label for="terms" class="form-check-label">Accepto els termes i condicions</label>
+      </div>
+
+      <button type="submit" class="btn btn-success">Registrar-se</button>
+    </form>
+
+    <a href="index.html" class="btn btn-secondary mt-4">Tornar</a>
+  </div>
+</body>
+</html>
